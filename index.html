@@ -4,13 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Owner Website</title>
-    <link href="C:\Users\mm514\Desktop\HomeOwnerWebsite\fonts\Pacifico-Regular.ttf;700&display=swap" rel="stylesheet">
-    <link href="C:\Users\mm514\Desktop\HomeOwnerWebsite\fonts\Sigmar-Regular.ttf;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sigmar&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <div class="left-half">
+        <h1>WELCOME TO BALAY NA HOMES!</h1>
+        <br>
+        <p>Homeowner's forever home</p>
+    </div>
     <header>
-        <p class ="site-name">Balay na Homes</p>
+        <nav class="nav_bar">
+            <div class ="logo"><a href="images/Balay na Home_vid.mp4">Balay na Homes</a></div>
+            <!--Menu Section-->
+            <ul>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                    <div class="hover-container">
+                        <h3>Learn more About us here!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptas quidem necessitatibus modi? Ipsam quasi dolorem ut modi porro dolore dignissimos, nostrum et molestias, veniam quaerat pariatur adipisci saepe?</p>
+                    </div>
+                </li>     
+                <li class="menu-item">
+                    <a href="#">Contact</a>
+                    <div class="hover-container">
+                        <h3>Get in touch with us!</h3>
+                        <img src="images/telephone-icon.png" alt="Icon" width="24" height="24"><p>(555) 123-4567</p>
+                    </div>
+                </li> 
+                <li class="menu-item">
+                    <a href="#">Help/FAQ</a>
+                    <div class="hover-container">
+                        <h3>Welcome! Hope this helps you!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quo excepturi eum repudiandae. Repellat explicabo nisi aperiam animi molestiae officia deleniti, vero totam recusandae qui dolorum deserunt quo, nam quidem.</p>
+                    </div>
+                </li>
+            </ul>
+            <!--End of Menu Section-->
+        </nav>
     </header> 
+
+    <!-- Vertical Divider -->
+    <div class="divider"></div>
+
+    <!-- Right-Half of the page -->
+    <div class="right-half">
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+
+                <div class="remember-forogt">
+                    <label><input type="checkbox">Rember me, mama coco</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+        </div>
+    </div>
+
+    <!--Footer
+    <div>
+        <footer><h2> BALAY NA HOMES &copy;2025</h2></footer>
+     </div>
+    -->
+
 </body>
+</body>
+<style>
+    body {
+        background-image: url('./images/background6.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        overflow: hidden;
+    }
+</style>
 </html>
