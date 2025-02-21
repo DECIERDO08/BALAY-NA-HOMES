@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sigmar';
+    src: url('../fonts/Sigmar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.site-name {
+    font-family: 'Sigmar', sans-serif; /* Using Sigmar font */
+    font-size: 15px; /* Adjust font size */
+    color: #333; /* Text color */
+    text-align: left; /* Text alignment */
+    margin-top: 10px; /* Adjust margin */
+}
+
+.body {
+    background-image: url('../images/homeowner-pic2.png'); /* Corrected image path */
+    background-size: cover; /* Ensures image covers the full body */
+    height: 100vh; /* Makes sure the body takes up full height */
+    opacity: 0.8; /* Adjust the opacity of the background image */
+}
