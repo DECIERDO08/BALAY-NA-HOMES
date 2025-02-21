@@ -1,28 +1,244 @@
-@font-face {
-    font-family: 'Pacifico';
-    src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.left-half {
+    color: rgb(29, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
-@font-face {
+.left-half h1 {
     font-family: 'Sigmar';
-    src: url('../fonts/Sigmar-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
-.site-name {
-    font-family: 'Sigmar', sans-serif; /* Using Sigmar font */
-    font-size: 15px; /* Adjust font size */
-    color: #333; /* Text color */
-    text-align: left; /* Text alignment */
-    margin-top: 10px; /* Adjust margin */
+.left-half p {
+    font-family: 'DancingScript';
 }
 
-.body {
-    background-image: url('../images/homeowner-pic2.png'); /* Corrected image path */
-    background-size: cover; /* Ensures image covers the full body */
-    height: 100vh; /* Makes sure the body takes up full height */
-    opacity: 0.8; /* Adjust the opacity of the background image */
+
+.nav_bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    height: 45px;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Pacifico';
+    font-size: 20px; 
+    display: flex;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 0 0 0 0 white;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.logo a:hover {
+    box-shadow: inset 200px 0 0 0 white;
+    color: #A3C9F1;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: right;
+    margin-right: 20px;   
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+    margin: 0 20px;
+
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 15px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item h3 {
+    text-decoration: solid;
+}
+
+.menu-item p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+.menu-item a:hover {
+    background-color: #A3C9F1; /* Add some hover effect to the link */
+    border-radius: 5px;
+}
+
+.hover-container {
+    position: absolute;
+    top: 300%; /* Position it below the text */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: none; /* Initially hidden */
+    border-radius: 5px;
+}
+
+.menu-item:hover .hover-container {
+    display: block;
+}
+/*End of left-half*/
+
+
+/* Divider
+.divider {
+    width: 1px;
+    background-color: #1d1c1c;
+}
+End of Divider*/
+
+
+
+
+
+/* Right Half (Login/Signup container) */
+
+
+/*.right-half {
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+}*/
+
+
+
+
+/*Log-in form*/
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    /*background: #b8adad;*/
+    width: 420px;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 50%;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*End of Log-in form*/
+
+
+
+
+
+.footer {
+    display: flex;
+    text-align: center;
+    margin: 5px 5px;
 }
