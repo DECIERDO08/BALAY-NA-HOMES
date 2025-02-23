@@ -4,97 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Owner Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sigmar+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Sigmar&display=swap" rel="stylesheet">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="left-content">
-        <h1>We strive to provide a harmonious environment for everyone to enjoy. <br>Our commitment is to create a space where comfort, peace, and community come together.</h1>
-        <p>Balay na Homes, Your home,  Our Home</p>
-    </div>
-    <header>
-        <nav class="nav_bar">
-            <div class ="logo"><a href="images/Balay na Home_vid.mp4">Balay na Homes</a></div>
-            <!--Menu Section-->
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="images/Balay-na-Homes.mp4">Balay na Homes</a></div>
+            <!--   Top Navigation Items   -->
             <ul>
-                <li class="menu-item">
-                    <a href="#">About</a>
+                <li><a href="#">About Us</a>
                     <div class="hover-container">
-                        <h3>Learn more About us here!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptas quidem necessitatibus modi? Ipsam quasi dolorem ut modi porro dolore dignissimos, nostrum et molestias, veniam quaerat pariatur adipisci saepe?</p>
-                    </div>
-                </li>     
-                <li class="menu-item">
-                    <a href="#">Contact</a>
-                    <div class="hover-container">
-                        <h3>Get in touch with us!</h3>
-                        <img src="images/telephone-icon.png" alt="Icon" width="24" height="24"><p>(555) 123-4567</p>
-                    </div>
-                </li> 
-                <li class="menu-item">
-                    <a href="#">Help/FAQ</a>
-                    <div class="hover-container">
-                        <h3>Welcome! Hope this helps you!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quo excepturi eum repudiandae. Repellat explicabo nisi aperiam animi molestiae officia deleniti, vero totam recusandae qui dolorum deserunt quo, nam quidem.</p>
+                        <h3>What are we?</h3>
+                        <p>We are Balay na Homes!<br>We strive to provide a harmonious environment for everyone to enjoy. <br>Our commitment is to create a space where comfort, peace, and community come together.</p>
                     </div>
                 </li>
+                <li><a href="#">Contact</a>
+                    <div class="hover-container">
+                        <h3>Want to get in touch with us?</h3>
+                        <div class="contact-info">
+                            <img src="images/vecteezy_phone-icon.png" style="width: 24px;" height="24px">
+                            <p>(555) 123-4567</p>
+                            <img src="images/location.png" style="width: 24px;" height="24px">
+                            <p>Sanciangko St, Cebu City, 6000 Cebu</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Privacy Policy</a>
+                    <div class="hover-container">
+                        <h3>Privacy Policy</h3>
+                        <p>At Balay na Homes, we collect personal information to improve our services and provide support. We implement security measures to protect your data, and we do not sell or rent your information to third parties. You have the right to access, update, or delete your data, and can opt out of promotional communications at any time.</p>
+                        <a href="#">Want to know more?</a>
+                </li>
             </ul>
-            <!--End of Menu Section-->
+            <!--   Top Navigation Items   -->
         </nav>
-    </header> 
 
-    <!-- Vertical Divider -->
-    <div class="divider"></div>
-
-    <!-- Right-Half of the page -->
-    <div class="right-half">
-        <div class="wrapper">
-            <form action="">
-                <h1>Login</h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Username" required>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-
-                <div class="remember-forogt">
-                    <label><input type="checkbox">Rember me, mama coco</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-
-                <button type="submit" class="btn">Login</button>
-
-                <div class="register-link">
-                    <p>Don't have an account? <a href="#">Register</a></p>
-                </div>
+        <!--   Content   -->
+        <div class="content">
+            <h1>BALAY NA<br>HOMES</h1>
+            <p>Where Community Meets Comfort and Dreams</p>
         </div>
+
+        <div class="divider"></div>
+
+        <!--   Login/Signup Form   -->
+        <div class="form">
+            <h2>Login Here</h2>
+            <input type="email" name="email" placeholder="Enter Email Here">
+            <input type="password" name="" placeholder="Enter Pasword Here">
+            <button class="btn"><a href="#">Login</a></button>
+
+            <p class="link">Don't have an account?<br>
+            <a href="#">Sign up </a> here! </a></p>
+            <p class="#">Log in with</p>
+
+            <div class="icon"> <!-- Shift + Alt + up/down arrow -->
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instgram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+        </div>
+
+        <!--   Footer   -->
+        <footer>
+            <p>&copy;2025 Balay na Homes. All rights reserved.</p>
+        </footer>
+
     </div>
-
-    <!--Footer
-    <div>
-        <footer><h2> BALAY NA HOMES &copy;2025</h2></footer>
-     </div>
-    -->
-
+    <script src="https://https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
-</body>
-<style>
-    body {
-        background-image: url('./images/background6.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        overflow: hidden;
-    }
-</style>
 </html>
